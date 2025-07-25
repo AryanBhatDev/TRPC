@@ -2,18 +2,18 @@ import { createTRPCClient, httpBatchLink } from '@trpc/client';
 import type { AppRouter } from '../server';
 
 const trpc = createTRPCClient<AppRouter>({
-  links: [
-    httpBatchLink({
-      url: 'http://localhost:3000',
-    }),
-  ],
+    links: [
+        httpBatchLink({
+            url: 'http://localhost:3001',
+        }),
+    ],
 });
 
-async function main(){
-    const response = await trpc.createTodo.mutate({
-        title:"hello",
-        description:"yo"
-    })
-    console.log(response)
+async function main() {
+    await trpc.createTodo.mutate({
+        title: 'hello',
+        description: 'yo',
+        done: false,
+    });
 }
-main()
+main();

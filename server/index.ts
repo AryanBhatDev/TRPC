@@ -5,6 +5,7 @@ import{z} from 'zod'
 const userInput = z.object({
     title:z.string(),
     description:z.string(),
+    done:z.boolean()
 })
 
 const appRouter = router({
