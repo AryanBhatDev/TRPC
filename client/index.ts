@@ -10,11 +10,10 @@ const trpc = createTRPCClient<AppRouter>({
 });
 
 async function main(){
-    const response = await trpc.createTodo.mutate({
+    await trpc.createTodo.mutate({
         title:"hello",
         description:"yo",
         done:false
     })
-    console.log(response)
 }
 main()
