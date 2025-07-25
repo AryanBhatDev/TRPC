@@ -1,0 +1,26 @@
+{
+  "name": "trpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AryanBhatDev/TRPC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AryanBhatDev/TRPC/issues"
+  },
+  "homepage": "https://github.com/AryanBhatDev/TRPC#readme",
+  "dependencies": {
+    "@trpc/client": "^11.4.3",
+    "@trpc/server": "^11.4.3",
+    "zod": "^4.0.10"
+  }
+}
