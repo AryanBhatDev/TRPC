@@ -4,7 +4,7 @@ import type { AppRouter } from '../server';
 const trpc = createTRPCClient<AppRouter>({
   links: [
     httpBatchLink({
-      url: 'http://localhost:3000',
+      url: 'http://localhost:3001',
     }),
   ],
 });
